@@ -1,0 +1,43 @@
+@import "../../Variables.scss";
+
+.OPStreamModal {
+	img {
+		border-radius: 12px;
+		min-height: 80vh;
+	}
+}
+
+.OPProgressItem {
+	position: relative;
+
+	.ProgressBarContainer {
+		width: 100%;
+		height: 10px;
+		border-radius: 99px;
+		position: relative;
+		margin-top: 0.5rem;
+
+		background: $tertiaryBG;
+		opacity: 1 !important;
+
+		.ProgressBar {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: 0 !important;
+
+			background: var(--cf-green);
+			border-radius: 99px;
+		}
+	}
+}
+
+.OPCamPreview {
+	position: relative;
+
+	img {
+		width: 100%;
+		border-radius: $secondaryBorderRadius;
+		cursor: pointer;
+	}
+}

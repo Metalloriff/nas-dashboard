@@ -1,0 +1,123 @@
+﻿@import "../../Variables";
+
+.App > footer {
+	background-color: rgba(black, 0.2);
+	--primary-color: var(--cf-purple);
+		
+	.Copyright {
+		padding: 10px;
+		grid-column-start: 2;
+		grid-column-end: 4;
+		
+		font-family: monospace;
+		font-size: 1.23em;
+		
+		opacity: 0.8;
+		background: rgba(black, 0.15);
+	}
+	
+	.LeftSections {
+		> * {
+			padding: 25px;
+		}
+	}
+	
+	.HeadSection {
+		padding-bottom: 10px;
+
+		.BodySection {
+			margin-left: 15px;
+			
+			> * {
+				margin: 5px 0;
+			}
+		}
+		
+		.FlexCenter {
+			margin-bottom: 20px;
+		}
+		
+		h2 {
+			color: var(--primary-color);
+			
+			margin: 0;
+			margin-left: -0.05em;
+		}
+		
+		.Logo {
+			width: 50px;
+			height: 50px;
+			
+			border-radius: 100%;
+		}
+	}
+	
+	.ContactSection {
+		padding-top: 0;
+		
+		.ContactEntry {
+			margin: 0 10px;
+			
+			cursor: pointer;
+			transition: color $ft;
+			
+			&:Hover {
+				color: white;
+			}
+			
+			.TooltipContainer {
+				bottom: 110%;
+			}
+		}
+	}
+	
+	.MiddleSection {
+		margin: auto;
+	}
+	
+	.LinksSection {
+		// display: grid;
+		margin-right: 10px;
+		
+		// grid-template-columns: repeat(3, 140px);
+
+		@media (max-width: 450px) {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.Contents {
+			flex-direction: column;
+			padding: 20px;
+
+			.Title {
+				font-family: monospace;
+				font-size: 1em;
+			
+				opacity: 0.8;
+			}
+		
+			a {
+				margin: 5px 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	#root .App > footer {
+		> .Flex {
+			flex-direction: column;
+		}
+
+		.ContactSection {
+			justify-content: center;
+		}
+
+		.RightSections {
+			margin: 0;
+
+			text-align: center;
+		}
+	}
+}

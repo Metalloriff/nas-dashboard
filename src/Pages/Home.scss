@@ -1,0 +1,128 @@
+@import "../Variables.scss";
+
+.HomePage {
+	display: flex;
+	flex-direction: column;
+
+	min-height: 100vh;
+	position: relative;
+
+	padding: 5rem 15vw;
+
+	.Background {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+
+		background: url("../Assets/background.jpg") no-repeat;
+		background-size: cover;
+		z-index: -10;
+		opacity: 0.05;
+	}
+
+	.Section {
+		margin-bottom: 5rem;
+
+		// &:nth-child(odd) {
+		// 	direction: rtl;
+		// }
+	}
+
+	.SectionColumns {
+		margin-bottom: 5rem;
+
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 0.5em;
+		width: max-content;
+		max-width: 70vw;
+
+		.Section {
+			margin: 0;
+		}
+	}
+
+	.Modules {
+		gap: 0.5rem;
+		display: flex;
+		flex-direction: column;
+
+		> .Flex > .Module {
+			&:not(:first-child):not(:last-child) {
+				border-radius: 0;
+			}
+			
+			&:first-child {
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+
+			&:last-child {
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+		}
+
+		.Module {
+			background: rgba(#292c3c, 0.5);
+			backdrop-filter: blur(10px);
+			padding: 1rem;
+			border-radius: var(--secondary-border-radius);
+			border: 1.5px solid rgba(white, 0.05);
+
+			width: 25.5rem;
+
+			.Body {
+				height: 99%;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.recharts-wrapper {
+				margin-top: auto;
+			}
+
+			.Title {
+				margin: 0;
+				margin-bottom: 1rem;
+			}
+
+			.Item {
+				&:not(:first-child) {
+					margin-top: 1rem;
+				}
+
+				b {
+					font-size: 0.85rem;
+				}
+
+				div {
+					font-size: 0.7rem;
+					font-weight: bolder;
+					opacity: 0.5;
+
+					span {
+						color: $primaryColor;
+					}
+				}
+
+				&.Button {
+					text-align: center;
+					background: $primaryColor;
+					border-radius: 99px;
+					padding: 0.5rem 0;
+					color: white;
+					cursor: pointer;
+				}
+			}
+
+			transition: filter $ft, box-shadow $ft;
+
+			&:hover {
+				filter: brightness(1.1);
+			}
+		}
+	}
+}

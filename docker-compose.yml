@@ -1,0 +1,10 @@
+services:
+  nas-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+      - 42069:3001
+    restart: unless-stopped
+    command: npm start
