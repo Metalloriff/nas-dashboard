@@ -7,6 +7,6 @@ services:
       - 3000:3000
       - 3001:3001
     volumes:
-      - ./config:/usr/src/app/nas-dashboard/src/config
+      - ./config:/usr/src/app/src/config
     restart: unless-stopped
     command: npm start
