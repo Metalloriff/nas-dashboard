@@ -8,7 +8,7 @@ export default function StableDiffusionModule() {
 
 	const events = {
 		start: () => {
-			fetch("http://nas.kinzoku.one:42070/api/sd_start", { method: "POST" }).then(r => {
+			fetch("http://nas.kinzoku.one:3001/api/sd_start", { method: "POST" }).then(r => {
 				console.log(r);
 			});
 		},

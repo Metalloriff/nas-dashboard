@@ -25,7 +25,7 @@ export default function UsageModule() {
 		}
 
 		const interval = setInterval(() => {
-			fetch("http://nas.kinzoku.one:42070/api/realtime")
+			fetch("http://nas.kinzoku.one:3001/api/realtime")
 				.then(r => r.json())
 				.then(data => {
 					setData(data);
