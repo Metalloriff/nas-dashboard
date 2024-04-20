@@ -6,6 +6,7 @@ const fs = require("fs");
 // app.use(express.static("/var/www/html"));
 
 for (const API_SRC of ["./src/Components/Modules/API", "./src/Components/Modules/Custom/API"]) {
+	if (!fs.existsSync(API_SRC)) continue;
 	const apis = fs.readdirSync(API_SRC);
 
 	for (const api_fp of apis) {
