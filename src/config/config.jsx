@@ -1,6 +1,6 @@
-import CountdownModule, { BirthdayModules } from "./Components/Modules/CountdownModule";
-import OctoPrintModule from "./Components/Modules/OctoPrintModule";
-import RecyclingModule from "./Components/Modules/RecyclingModule";
+import CountdownModule, { BirthdayModules } from "../Components/Modules/CountdownModule";
+import OctoPrintModule from "../Components/Modules/OctoPrintModule";
+import RecyclingModule from "../Components/Modules/RecyclingModule";
 
 export default {
 	// background: {

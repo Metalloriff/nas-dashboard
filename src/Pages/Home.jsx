@@ -4,13 +4,13 @@ import SpecsModule from "../Components/Modules/SpecsModule";
 import UsageModule from "../Components/Modules/UsageModule";
 import OctoPrintModule from "../Components/Modules/OctoPrintModule";
 import NasModule from "../Components/Modules/NasModule";
-import bookmarks from "../bookmarks.json";
+import bookmarks from "../config/bookmarks.json";
 import BookmarkModule from "../Components/Modules/BookmarkModule";
 import { getRandomKey, joinClassNames } from "../Classes/Constants";
 import Countdown from "react-countdown";
 import StableDiffusionModule from "../Components/Modules/StableDiffusionModule";
 import RecyclingModule from "../Components/Modules/RecyclingModule";
-import config from "../config.jsx";
+import config from "../config/config.jsx";
 
 export default function HomePage() {
 	function renderCountdown(t) {
