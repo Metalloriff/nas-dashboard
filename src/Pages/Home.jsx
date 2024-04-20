@@ -3,7 +3,6 @@ import "./Home.scss";
 import SpecsModule from "../Components/Modules/SpecsModule";
 import UsageModule from "../Components/Modules/UsageModule";
 import OctoPrintModule from "../Components/Modules/OctoPrintModule";
-import NasModule from "../Components/Modules/NasModule";
 import bookmarks from "../config/bookmarks.json";
 import BookmarkModule from "../Components/Modules/BookmarkModule";
 import { getRandomKey, joinClassNames } from "../Classes/Constants";
