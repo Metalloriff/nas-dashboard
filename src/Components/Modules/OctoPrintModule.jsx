@@ -11,7 +11,7 @@ export default function OctoPrintModule({ api_url, stream_url = null, api_key })
 	async function api_req(path) {
 		const uri = api_url + "/api/" + path;
 		const response = await fetch(uri, { headers: { "Authorization": "Bearer " + api_key } });
-		const json = await response.json();
+		const json = await response.json().catch(err => console.error("Failed to initialize OctoprintModule", err));
 
 		return json;
 	}
