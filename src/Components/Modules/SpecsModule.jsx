@@ -11,7 +11,7 @@ export default function SpecsModule() {
 		fetch(`http://${window.location.hostname}:3001/api/specs`)
 			.then(r => r.json())
 			.then(setSpecs)
-			.catch(console.error);
+			.catch(err => console.error("Failed to initialize SpecsModule", err));
 	}, []);
 
 	useEffect(() => {

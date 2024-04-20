@@ -47,7 +47,7 @@ export default function UsageModule() {
 
 					setUsageGraphs(usageGraphs);
 				})
-				.catch(console.error);
+				.catch(err => console.error("Failed to initialize UsageModule", err));
 		}, 2000);
 
 		return () => {
@@ -65,10 +65,12 @@ export default function UsageModule() {
 					<div><span>{data.cpu.load.currentLoad.toFixed(1)}%</span></div>
 				</div>
 
-				<div className="Item">
-					<b>Temperature</b>
-					<div><span>{data.cpu.temp.main.toFixed(1)}C</span></div>
-				</div>
+				{data?.cpu?.temp?.main ? (
+					<div className="Item">
+						<b>Temperature</b>
+						<div><span>{data.cpu.temp.main.toFixed(1)}C</span></div>
+					</div>
+				) : null}
 
 				<Chart
 					graph={usageGraphs.cpu}
