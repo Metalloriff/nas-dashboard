@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - 3000:3000
-      - 42069:3001
+      - 3001:3001
     volumes:
       - ./config:/usr/src/app/nas-dashboard/src/config
     restart: unless-stopped
