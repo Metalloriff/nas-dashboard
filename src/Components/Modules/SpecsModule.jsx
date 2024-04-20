@@ -8,7 +8,7 @@ export default function SpecsModule() {
 	const [ramCapacity, setRamCapacity] = useState(null);
 
 	useEffect(() => {
-		fetch("http://nas.kinzoku.one:3001/api/specs")
+		fetch(`http://${window.location.hostname}:3001/api/specs`)
 			.then(r => r.json())
 			.then(setSpecs)
 			.catch(console.error);

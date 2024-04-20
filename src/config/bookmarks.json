@@ -2,7 +2,7 @@
 	"Server": [
 		{
 			"title": "Dockge",
-			"uri": "http://nas.kinzoku.one:5001",
+			"uri": "#",
 			"icon": "https://raw.githubusercontent.com/louislam/dockge/master/frontend/public/icon.svg"
 		}
 	],
