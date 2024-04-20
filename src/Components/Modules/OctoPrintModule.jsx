@@ -5,11 +5,6 @@ import "./OctoPrintModule.scss";
 import { useInterval } from "../../Classes/Hooks";
 import InlineLoading from "../InlineLoading";
 
-const STREAM_URI = "http://nas.kinzoku.one:8080/stream";
-const OCTOPRINT_URI = "http://nas.kinzoku.one:5000";
-const API_URI = OCTOPRINT_URI + "/api/";
-const API_KEY = "8FDD8FEC98A8436183416ABE430BEBDB";
-
 export default function OctoPrintModule({ api_url, stream_url = null, api_key }) {
 	const [currentJob, setCurrentJob] = useState(null);
 
@@ -106,7 +101,7 @@ export default function OctoPrintModule({ api_url, stream_url = null, api_key })
 						</>
 					}
 
-					<div className="Item Button" onClick={() => window.open(OCTOPRINT_URI, "_blank")}>
+					<div className="Item Button" onClick={() => window.open(api_url, "_blank")}>
 						Open OctoPrint
 					</div>
 				</>
