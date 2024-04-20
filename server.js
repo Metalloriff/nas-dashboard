@@ -1,9 +1,10 @@
 const express = require("express");
+const cors = require("cors");
 const { exec } = require("child_process");
 const app = express();
 const fs = require("fs");
 
-// app.use(express.static("/var/www/html"));
+app.use(cors()); // May death come upon you, CORS. For your existence is nothing but a stain on this planet. Perish, wither away.
 
 for (const API_SRC of ["./src/Components/Modules/API", "./src/Components/Modules/Custom/API"]) {
 	if (!fs.existsSync(API_SRC)) continue;
