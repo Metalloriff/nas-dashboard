@@ -9,7 +9,7 @@ export default {
 	// 	blur: 0
 	// },
 	background: {
-		url: "https://i.postimg.cc/T277xdTv/0kfcieieph081.png",
+		url: "https://i.postimg.cc/3wyfhwCS/vincentiu-solomon-ln5drpv-Im-I-unsplash.jpg",
 		opacity: 0.5,
 		blur: 5
 	},
