@@ -25,20 +25,7 @@ export default {
 		"Household":
 			<>
 				<RecyclingModule />
-				<CountdownModule title="Freedom" dateStr="05-05-2024" />
-				<CountdownModule title="Jezza" dateStr="05-11-2024" />
-				<CountdownModule title="NBU 2.0" dateStr="07-08-2024" />
-			</>,
-		"Birthdays":
-			<>
-				<BirthdayModules birthdays={{
-					"Me": "05-20-2001",
-					"Danny": "03-05-1993",
-					"Max": "06-05-2002",
-					"Cal": "04-20-1987",
-					"Nate": "06-10-2003",
-					"Jezza": "06-21-2002"
-				}} />
+				<CountdownModule title="Birthday" dateStr="05-20-2024" />
 			</>
 	}
 };

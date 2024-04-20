@@ -4,47 +4,6 @@
 			"title": "Dockge",
 			"uri": "http://nas.kinzoku.one:5001",
 			"icon": "https://raw.githubusercontent.com/louislam/dockge/master/frontend/public/icon.svg"
-		},
-		{
-			"title": "LinkWarden",
-			"uri": "http://nas.kinzoku.one:9900/dashboard",
-			"icon": "https://i.postimg.cc/4dh9rWkn/image.png"
-		},
-		{
-			"title": "Morphos",
-			"uri": "http://nas.kinzoku.one:5880/",
-			"icon": "https://github.com/danvergara/morphos/raw/main/screenshots/morphos.jpg"
-		}
-	],
-	"Monitors": [
-		{
-			"title": "Amazon Vine",
-			"uri": "https://www.amazon.com/vine/vine-items?queue=potluck",
-			"icon": "https://i.imgur.com/nbq2Zdo.png"
-		},
-		{
-			"title": "Feraline Analytics",
-			"uri": "https://itch.io/game/summary/2338277",
-			"icon": "https://i.imgur.com/GhZ3RcN.png"
-		},
-		{
-			"title": "Itch Payouts",
-			"uri": "https://itch.io/dashboard/payouts",
-			"icon": "https://i.imgur.com/rCma29i.png"
-		},
-		{
-			"title": "Mining Rigs",
-			"uri": "https://rvn.2miners.com/account/RSr1kcvdGPgktieMMa4XCq8SaWFoQVRRoW",
-			"icon": "https://i.postimg.cc/Px1H21T9/image.png"
-		},
-		{
-			"title": "Xeggex",
-			"uri": "https://xeggex.com/account/balances"
-		},
-		{
-			"title": "Proton Mail",
-			"uri": "https://mail.proton.me/u/4/inbox",
-			"icon": "https://i.postimg.cc/wMV0wZ48/image.png"
 		}
 	],
 	"Bookmarks": [
@@ -75,10 +34,6 @@
 			"title": "ChatGPT",
 			"uri": "https://chat.openai.com/",
 			"icon": "https://i.postimg.cc/gkQCMLpt/image.png"
-		},
-		{
-			"title": "Linux Links",
-			"uri": "https://www.linuxlinks.com/"
 		}
 	]
 }
