@@ -1,6 +1,5 @@
 import CountdownModule, { BirthdayModules } from "Modules/CountdownModule";
 import OctoPrintModule from "Modules/OctoPrintModule";
-import RecyclingModule from "Modules/RecyclingModule";
 
 export default {
 	background: {
@@ -19,7 +18,6 @@ export default {
 			</>,
 		"Household":
 			<>
-				<RecyclingModule />
 				<CountdownModule title="Birthday" dateStr="05-20-2024" />
 			</>
 	}
