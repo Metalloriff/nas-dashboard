@@ -13,3 +13,7 @@ Note: This is my first dockerfile of my own, so it's likely not perfect.
 First start by either cloning the entire repo, or just downloading the `Dockerfile` and `docker-compose.yml` files. They're all that's necessary for setup.
 
 Then run `docker compose up --build`
+
+Then, you can copy the files inside of src/config to the config directory in your docker project, and start editing your own configs.
+
+Optionally, you can create your own JSX modules inside the modules folder. Feel free to look in src/Components/Modules for examples. You can also create your own backend APIs, though there is currently no way to install your own NPM packages. If you know of an elegant solution, please create an issue or PR.
