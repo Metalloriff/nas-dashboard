@@ -5,16 +5,17 @@ const fs = require("fs");
 
 // app.use(express.static("/var/www/html"));
 
-const API_SRC = "./src/Components/Modules/API";
-const apis = fs.readdirSync(API_SRC);
+for (const API_SRC of ["./src/Components/Modules/API", "./src/Components/Modules/Custom/API"]) {
+	const apis = fs.readdirSync(API_SRC);
 
-for (const api_fp of apis) {
-	try {
-		const api = require(API_SRC + "/" + api_fp);
-		api(app);
-	}
-	catch (err) {
-		console.error(err);
+	for (const api_fp of apis) {
+		try {
+			const api = require(API_SRC + "/" + api_fp);
+			api(app);
+		}
+		catch (err) {
+			console.error(err);
+		}
 	}
 }
 

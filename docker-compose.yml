@@ -8,6 +8,6 @@ services:
       - 3001:3001
     volumes:
       - ./config:/usr/src/app/src/config
-      - ./modules:/usr/src/app/src/Components/Modules
+      - ./modules:/usr/src/app/src/Components/Modules/Custom
     restart: unless-stopped
     command: npm start

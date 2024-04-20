@@ -93,7 +93,17 @@ module.exports = env => ({
 			".ts",
 			".tsx",
 			...assetFileExtensions.map(e => "." + e)
-		]
+		],
+		alias: {
+			"Modules": [
+				path.resolve(__dirname, "src/Components/Modules"),
+				path.resolve(__dirname, "src/Components/Modules/Custom")
+			],
+			"API": [
+				path.resolve(__dirname, "src/Components/Modules/API"),
+				path.resolve(__dirname, "src/Components/Modules/Custom/API")
+			]
+		}
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
