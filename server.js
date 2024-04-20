@@ -26,5 +26,5 @@ app.post("/api/sd_start", async (req, res) => {
 	res.status(200);
 });
 
-const PORT = 42070;
+const PORT = 3001;
 app.listen(PORT);
