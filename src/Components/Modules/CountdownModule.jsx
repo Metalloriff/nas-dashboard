@@ -41,7 +41,7 @@ export function ttill(dateStr) {
 		formatted.push(`${months} months`);
 	}
 	if (days > 0) {
-		formatted.push(`${days} days`);
+		formatted.push(`${days + 1} days`);
 	}
 	else if (hours > 0) {
 		formatted.push(`${hours} hours`);
